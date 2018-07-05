@@ -1,1 +1,0 @@
-# easy-vkontakte-connect
