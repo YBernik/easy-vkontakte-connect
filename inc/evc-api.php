@@ -695,7 +695,7 @@ function evc_vkapi_get_users( $params ) {
 		'fields'       => apply_filters( 'evc_vkapi_get_users_fields', 'screen_name,sex,photo_100,photo_max_orig' ),
 		//uid,first_name,last_name,nickname,screen_name,sex,bdate,city,country,timezone,photo,photo_medium,photo_big,has_mobile,rate,contacts,education,online,counters
 		//'name_case' => ''
-		'v'            => '5.21'
+		'v'            => '5.131'
 	);
 	$params  = wp_parse_args( $params, $default );
 	$params  = apply_filters( 'evc_vkapi_get_users', $params );
@@ -739,7 +739,7 @@ function evc_vkapi_users_get_subscription( $params ) {
 		'offset'       => '',
 		'count'        => '',
 		'fields'       => '',
-		'v'            => '5.21'
+		'v'            => '5.131'
 	);
 	$params  = wp_parse_args( $params, $default );
 	$params  = apply_filters( 'evc_vkapi_users_get_subscription', $params );
@@ -921,7 +921,7 @@ function evc_vkapi_groups_is_member( $params ) {
 		//'user_id' => '',
 		//'user_ids' => '',
 		//'extended' => '', // 0
-		'v'            => '5.23'
+		'v'            => '5.131'
 	);
 	$params  = wp_parse_args( $params, $default );
 
@@ -954,7 +954,7 @@ function evc_vkapi_resolve_screen_name( $params ) {
 	$default = array(
 		'access_token' => $access_token,
 		//'screen_name' => ''
-		'v'            => '5.21'
+		'v'            => '5.131'
 	);
 	$params  = wp_parse_args( $params, $default );
 
@@ -973,7 +973,7 @@ function evc_vkapi_users_search( $params ) {
 	//http://vk.com/dev/users.search
 	$default = array(
 		'access_token' => $options['site_access_token'],
-		'v'            => '5.21'
+		'v'            => '5.131'
 	);
 	$params  = wp_parse_args( $params, $default );
 
@@ -991,7 +991,7 @@ function evc_vkapi_execute( $params ) {
 	//http://vk.com/dev/execute
 	$default = array(
 		'access_token' => $options['site_access_token'],
-		'v'            => '5.21'
+		'v'            => '5.131'
 	);
 	$params  = wp_parse_args( $params, $default );
 
